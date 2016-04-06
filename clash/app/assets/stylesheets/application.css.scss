@@ -73,6 +73,12 @@ header {
 		}
 	}
 }
+.jumbotron1{
+  background-image: asset-url('34.jpg');
+  background-size:cover;
+  height:800px;
+  width:800px;
+}
 
 @import 'home.css.scss';
 @import 'post.css.scss';

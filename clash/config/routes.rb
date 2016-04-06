@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   	end
     resources :comments
   end
+  resources :phanis
   root 'posts#index'
 end
