@@ -15,7 +15,7 @@
     <%= f.error_notification %>
     <div><%= f.input :name, required: true, autofocus: true,placeholder: "Name", label: false %></div>
    <div><p> <%= f.input :email, required: true,placeholder: "email",label: false %></p></div>
-   <div><p> <%= f.input :password, required: true, placeholder: "Password", label: false,hint: ("#{@minimum_password_length} characters minimum" if @validatable) %></p></div>
+   <center><div><p> <%= f.input :password, required: true, placeholder: "Password (8 digits)", label: false,hint: ("#{@minimum_password_length} characters minimum" if @validatable) %></p></div></center>
     <div><p><%= f.input :password_confirmation, required: true,placeholder: "Re-enter Password", label: false %></p></div>
 </div>
 <div>
