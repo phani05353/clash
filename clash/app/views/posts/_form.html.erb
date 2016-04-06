@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body1>
+
+<div id="main1">
+  <p1b><center>Create A New Inspiration</center></p1b>
+  <center>
+   <%= simple_form_for @post do |f| %>
+
+   <div><p> <%= f.input :title, required: false ,placeholder: "Title", label: false%></p></div>
+   <div><p> <%= f.input :link, required: false ,placeholder: "Link", label: false%></p></div>
+   <div><p> <%= f.input :description, required: false ,placeholder: "Description", label: false%></p></div>
+    <center><div> <%= f.file_field :image, accept: 'image/jpeg,image/png,image/gif' %></div></center>
+</div>
+<div>
+  <center><%= f.button :submit, "Submit" %></center>
+  </div>
+
+<% end %>
+
+
+  </center>
+</body1>
+</html>
